@@ -1,0 +1,35 @@
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches: '*'
+
+name: Hexlet CI
+jobs:
+  check:
+    name: Check
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set up Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14'
+
+    - uses: actions/checkout@master
+      name: Checkout
+
+    - name: Install dependencies
+      working-directory: .
+      run: |
+        make setup
+
+    - name: Run lint checks
+      working-directory: .
+      run: |
+        make lint
+
+    - name: Run test checks
+      working-directory: .
+      run: |
+        make test
