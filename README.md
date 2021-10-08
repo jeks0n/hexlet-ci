@@ -1,6 +1,6 @@
 # JS Fastify Blog
 
-[![Hexlet CI](https://github.com/jeks0n/hexlet-ci/workflows/Hexlet%20CI/badge.svg)](https://github.com/jeks0n/hexlet-ci/actions)
+[![Hexlet CI](https://github.com/jeks0n/hexlet-ci/workflows/Hexlet%20CI/check.yml/badge.svg)](https://github.com/jeks0n/hexlet-ci/actions)
 
 ## Setup
 
